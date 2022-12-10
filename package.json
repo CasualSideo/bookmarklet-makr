@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ProjectEther/bookmarklet-makr/issues"
   },
-  "homepage": "https://github.com/ProjectEther/bookmarklet-makr#readme"
+  "homepage": "https://github.com/ProjectEther/bookmarklet-makr#readme",
+  "dependencies": {
+    "strict-uri-encode": "^2.0.0"
+  }
 }
