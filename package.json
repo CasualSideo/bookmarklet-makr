@@ -1,0 +1,22 @@
+{
+  "name": "bookmarklet-makr",
+  "version": "1.0.0",
+  "description": "A simple Bookmarklet maker",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProjectEther/bookmarklet-makr.git"
+  },
+  "keywords": [
+    "bookmarklet"
+  ],
+  "author": "ProjectEther&MrBrain295",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProjectEther/bookmarklet-makr/issues"
+  },
+  "homepage": "https://github.com/ProjectEther/bookmarklet-makr#readme"
+}
