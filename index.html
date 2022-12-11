@@ -7,12 +7,13 @@
     <title>Bookmarklet makers</title>
   </head>
   <body>
-    <form id="parent">
+    <form>
     <label for="bookmarklet">Enter your JavaScript:</label>
         <input type="text" id="bookmarklet" name="bookmarklet" /> 
       <input type="button" value="Convert to bookmarklet" onclick="makeBookmarklet()" />  
     </form>
-      
+    <button onclick="location.reload();">Reset</button>
+      <div id="parent"></div>
     <script src="index.js"></script>
   </body>
 </html>

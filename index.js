@@ -5,7 +5,7 @@ function makeBookmarklet() {
   const final = encodeURI(bookmarklet);
   console.log(final);
   subject.insertAdjacentHTML(
-    "afterend",
+    "afterbegin",
     "<p>Your bookmarklet code: <code>" + final + "</code></p>"
   );
 }
