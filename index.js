@@ -1,5 +1,5 @@
 async function makeBookmarklet() {
-  const code = document.querySelector("#bookmarklet");
+  const code = document.querySelector("#bookmarklet").value;
   const subject = document.querySelector("#parent");
 
   // Use template literals to create the bookmarklet code
