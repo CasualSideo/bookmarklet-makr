@@ -1,6 +1,6 @@
-function makeBookmarklet() {
+function makeBookmarklet(): void {
   const code = document.querySelector("#bookmarklet").value;
-  const subject = document.querySelector("#parent");
+  const subject = document.querySelector("#parent") as HTMLElement;
   const bookmarklet = `javascript:(function(){${code}})()`;
   const final = `javascript:${encodeURIComponent(bookmarklet)}`;
   subject.innerHTML = `<p>Your bookmarklet code: <code>${final}</code></p>
@@ -8,5 +8,6 @@ function makeBookmarklet() {
 }
 
 document.querySelector("#reset").addEventListener("click", () => {
-  document.querySelector("#parent").innerHTML = "";
+  const subject = document.querySelector("#parent") as HTMLElement;
+  subject.innerHTML = "";
 });
