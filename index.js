@@ -4,13 +4,14 @@ async function makeBookmarklet() {
 
   // Use template literals to create the bookmarklet code
   const bookmarklet = `(function(){${code}})()`;
-  const final = encodeURIComponent(bookmarklet);
+  const encodedBookmarklet = encodeURIComponent(bookmarklet);
 
   // Use template literals to create the HTML elements
-  subject.innerHTML = `
-    <p>Your bookmarklet code: <code>javascript:${final}</code></p>
-    <a href="javascript:${final}">Click here to use your bookmarklet</a>
+  const html = `
+    <p>Your bookmarklet code: <code>javascript:${encodedBookmarklet}</code></p>
+    <a href="javascript:${encodedBookmarklet}">Click here to use your bookmarklet</a>
   `;
+  subject.innerHTML = html;
 }
 
 document.querySelector("#reset").addEventListener("click", () => {
