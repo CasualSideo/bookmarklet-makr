@@ -1,6 +1,9 @@
 async function makeBookmarklet() {
   const textBox = document.getElementById("script-src");
-  const code2 = textBox.value.trim().length > 0 ? `const script=document.createElement('script');script.src='${textBox.value}';` : "";
+  const code2 =
+    textBox.value.trim().length > 0
+      ? `const script=document.createElement('script');script.src='${textBox.value}';`
+      : "";
   const code = document.querySelector("#bookmarklet").value;
   const subject = document.querySelector("#parent");
   const bookmarklet = `(function(){${code}${code2})()`;
