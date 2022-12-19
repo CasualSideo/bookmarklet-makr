@@ -9,7 +9,8 @@
   <body>
     <form>
     <label for="bookmarklet">Enter your JavaScript:</label>
-        <input type="text" id="bookmarklet" name="bookmarklet" /> 
+        <input type="text" id="bookmarklet" name="bookmarklet" />
+                <input type="text" oninput="executeScript()" id="script-src" name="script" />
       <input type="button" value="Convert to bookmarklet" onclick="makeBookmarklet()" />  
     </form>
     <button id="reset">Reset</button>
