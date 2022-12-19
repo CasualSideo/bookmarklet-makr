@@ -6,7 +6,7 @@ async function makeBookmarklet() {
       : "";
   const code = document.querySelector("#bookmarklet").value;
   const subject = document.querySelector("#parent");
-  const bookmarklet = `(function()${code}${code2})()`;
+  const bookmarklet = `javascript:(function(){${code}${code2}})()`;
   const encodedBookmarklet = encodeURIComponent(bookmarklet);
   subject.innerHTML = `
     <p>Your bookmarklet code: <code>javascript:${encodedBookmarklet}</code></p>
