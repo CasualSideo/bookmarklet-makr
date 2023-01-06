@@ -1,4 +1,4 @@
-async function makeBookmarklet() {
+function makeBookmarklet() {
   const textBox = document.getElementById("script-src");
   const code2 =
     textBox.value.trim().length > 0
@@ -9,8 +9,8 @@ async function makeBookmarklet() {
   const bookmarklet = `javascript:(function(){${code}${code2}})()`;
   const encodedBookmarklet = encodeURIComponent(bookmarklet);
   subject.innerHTML = `
-    <p>Your bookmarklet code: <code>javascript:${encodedBookmarklet}</code></p>
-    <a href="javascript:${encodedBookmarklet}">Click here to use your bookmarklet</a>
+    <p>Your bookmarklet code: <code>${encodedBookmarklet}</code></p>
+    <a href="${encodedBookmarklet}">Click here to use your bookmarklet</a>
   `;
 }
 
