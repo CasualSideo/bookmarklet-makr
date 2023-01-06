@@ -7,7 +7,7 @@ function makeBookmarklet() {
   const code = document.querySelector("#bookmarklet").value;
   const subject = document.querySelector("#parent");
   const bookmarklet = `javascript:(function(){${code}${code2}})()`;
-  const encodedBookmarklet = encodeURI(bookmarklet);
+  const encodedBookmarklet = encodeURIComponent(bookmarklet);
   subject.innerHTML = `
     <p>Your bookmarklet code: <code>${encodedBookmarklet}</code></p>
     <a href="${encodedBookmarklet}">Click here to use your bookmarklet</a>
