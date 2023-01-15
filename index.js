@@ -17,3 +17,6 @@ function makeBookmarklet() {
 document.querySelector("#reset").addEventListener("click", () => {
   document.querySelector("#parent").innerHTML = "";
 });
+document.querySelector("#bookmarklet").addEventListener("click", () => {
+  makeBookmarklet();
+});
